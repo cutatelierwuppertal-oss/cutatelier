@@ -238,7 +238,7 @@
       transform: translateY(-12px);
       box-shadow: 0 18px 36px rgba(35, 132, 232, 0.28);
     }
-    .menu-btn:focus-visible, .close-btn:focus-visible, .cta-btn:focus-visible, .ghost-btn:focus-visible, .contact-link:focus-visible, .floating-cta:focus-visible, .scroll-top:focus-visible, .side-links a:focus-visible, .social-link:focus-visible {
+    .menu-btn:focus-visible, .close-btn:focus-visible, .cta-btn:focus-visible, .ghost-btn:focus-visible, .contact-link:focus-visible, .floating-cta:focus-visible, .scroll-top:focus-visible, .side-links a:focus-visible, .social-link:focus-visible, .legal-footer a:focus-visible {
       outline: 3px solid rgba(35, 132, 232, 0.24);
       outline-offset: 2px;
     }
@@ -465,6 +465,34 @@
     .hours td:last-child { text-align: right; font-weight: 600; }
     .contact-socials { display: flex; justify-content: center; gap: 12px; margin-top: 24px; }
     .social-link { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 50%; color: #fff; background: linear-gradient(180deg, var(--blue), var(--blue-deep)); box-shadow: 0 12px 24px rgba(35, 132, 232, 0.26); }
+    .legal-footer {
+      padding: 24px 26px 34px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(7, 11, 17, 0.72);
+      color: rgba(255, 255, 255, 0.76);
+      text-align: center;
+    }
+    .legal-footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 12px 18px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .legal-footer a {
+      color: #9dcfff;
+      transition: color 0.2s ease;
+    }
+    .legal-footer a:hover {
+      color: #fff;
+    }
+    .legal-footer-copy {
+      margin-top: 12px;
+      font-size: 12px;
+      line-height: 1.6;
+    }
     .side-menu {
       position: fixed;
       top: 0;
@@ -710,6 +738,11 @@
 
       .section {
         padding: 70px 70px;
+      }
+
+      .legal-footer {
+        padding-left: 70px;
+        padding-right: 70px;
       }
 
       .section-title {
@@ -1193,6 +1226,13 @@
           </div>
         </section>
       </main>
+      <footer class="legal-footer" aria-label="Rechtliche Informationen">
+        <nav class="legal-footer-nav" aria-label="Rechtliche Links">
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </nav>
+        <p class="legal-footer-copy">© 2026 Cut Atelier. Alle Rechte vorbehalten.</p>
+      </footer>
     </div>
   </div>
 
